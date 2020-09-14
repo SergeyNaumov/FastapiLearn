@@ -1,0 +1,29 @@
+  <style>
+    .row {margin-bottom: 10px;}
+  </style>
+
+
+<form enctype="multipart/form-data" method="post">
+  <h2>Простая multipart-форма с загрузкой файла</h2>
+  <div class="row">
+    <input name="name" type="text" placeholder="Укажите Ваше имя" value="Сергей">
+  </div>
+  <div class="row">
+    <input name="position" type="text" placeholder="Укажите Вашу должность" value="Программист">
+  </div>
+  <div class="row">
+    <input type="file" name="attach"  placeholder="Загрузите файл">
+  </div>
+  <input  type="submit" value="Отправить">
+</form>
+<hr>
+
+<form enctype="multipart/form-data" action="/learm/form-multiple" method="post">
+  <h2>Форма с multiple</h2>
+  <div class="row">
+    <input type="file" name="attach"  placeholder="Загрузите файл" multiple>
+  </div>
+
+
+  <input  type="submit" value="Отправить">
+</form>
